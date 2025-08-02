@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Durgi Rajesh</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+      <div class="loader">
+        <div class="loader-circle"></div>
+        <p>Loading...</p>
+      </div>
+    </div>
+    <header>
+      <nav class="navbar">
+        <div class="nav-brand">
+          <a href="#hero" class="logo">Durgi Rajesh</a>
+        </div>
+        <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Expertise</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <section id="hero" class="hero">
+        <img src="durgi-rajesh.png" alt="Durgi Rajesh" class="profile-pic" loading="lazy">
+        <span class="hero-role">Software Developer / Engineer</span>
+        <h1>
+          Hi, I'm <span class="accent">Durgi Rajesh</span><br>from India.
+        </h1>
+        <a href="resume.pdf" class="btn btn-download" download aria-label="Download CV">Download CV <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/><path d="M12 8v6m0 0l-3-3m3 3l3-3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </section>
+    </header>
+
+    <main>
+      <!-- ===== About ===== -->
+      <section id="about" class="about section">
+        <h2>About Me</h2>
+        <div class="about-content">
+
+          <p>I am a Software Engineer II at Genesys, working on next-generation information retrieval systems and AI-powered knowledge platforms. I graduated with a B.Tech in Computer Science & Engineering from Vellore Institute of Technology in 2022. My work focuses on building scalable, knowledge-driven architectures and developing search systems for enterprise applications.</p>
+          <br>
+          <p>I am passionate about distributed systems, microservices architecture, and building fault-tolerant applications that scale. At <strong>Genesys</strong>, I played a pivotal role in developing <em>Knowledge v3</em>—a Retrieval-Augmented Generation (RAG) system that transitioned the platform from keyword-based to knowledge-driven architecture, implementing ElasticSearch optimizations and conducting LLM evaluations for AI product development. Previously at <strong>Ericsson</strong>, I optimized license management systems and implemented security solutions across distributed node clusters.</p>
+          <br>
+          <p>Away from the keyboard, I'm captivated by the grand narrative of existence—the <em>Evolution of Humankind</em>, the geometry of <em>Cosmology</em>, the paradoxes of <em>Quantum Mechanics</em>, and the forces of <em>Astro- and Nuclear Physics</em>. Exploring these frontiers sharpens my systems thinking and keeps me humble about what we have yet to discover.</p>
+          <br>
+          <p>I'm open to exploring opportunities and excited to contribute my skills to innovative products. If you're looking for a motivated individual ready to take on new challenges, let's connect!</p>
+        </div>
+      </section>
+
+      <!-- ===== Skills | Experience | Education (Tabbed) ===== -->
+      <section id="skills" class="section tabbed">
+        <h2>Expertise</h2>
+        <div class="tab-nav">
+          <button class="tab-link active" data-tab="skills-tab"><i class="fas fa-code"></i> Skills</button>
+          <button class="tab-link" data-tab="experience-tab"><i class="fas fa-briefcase"></i> Experience</button>
+          <button class="tab-link" data-tab="education-tab"><i class="fas fa-graduation-cap"></i> Education</button>
+          <button class="tab-link" data-tab="certifications-tab"><i class="fas fa-certificate"></i> Certifications</button>
+        </div>
+
+        <div id="skills-tab" class="tab-content active">
+          <div class="skills-content">
+            <div class="skill-category">
+              <h3><i class="fas fa-laptop-code"></i> Programming Languages</h3>
+              <ul>
+                <li>Python</li>
+                <li>C/C++</li>
+                <li>Java</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>SQL</li>
+              </ul>
+            </div>
+            <div class="skill-category">
+              <h3><i class="fas fa-tools"></i> Expertise & Technologies</h3>
+              <ul>
+                <li>Amazon Web Services (AWS)</li>
+                <li>Distributed Systems</li>
+                <li>Microservices</li>
+                <li>Information Retrieval Systems</li>
+                <li>Django, Flask, OpenSearch</li>
+                <li>Docker, Jenkins, MySQL</li>
+                <li>Artificial Intelligence</li>
+                <li>Multi-threading</li>
+                <li>Systems Design, Platform Development</li>
+              </ul>
+            </div>
+            <div class="skill-category">
+              <h3><i class="fas fa-trophy"></i> Competitive Programming</h3>
+              <ul>
+                <li>Top 5% on LeetCode with 900+ problems solved</li>
+                <li>Consistent algorithmic problem-solving in contests</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div id="experience-tab" class="tab-content">
+          <div class="job">
+            <header>
+              <h3><i class="fas fa-building"></i> Genesys</h3>
+              <span class="date">November 2024 - Present</span>
+            </header>
+            <h4 class="job-title">Software Engineer II</h4>
+            <ul>
+              <li>Researched and implemented optimal ElasticSearch DSL queries that increased the search accuracy of the existing system by 45%, significantly improving the quality of initial document retrieval</li>
+              <li>Researched, designed, and implemented a novel query preprocessing module that resolved a long-standing noise issue in the search system, resulting in an 85% improvement in precision and accuracy, and significantly reducing false positives in production</li>
+              <li>Led a comprehensive evaluation and benchmarking of large language models, optimizing for factual consistency, coherence, and relevance, directly influencing LLM selection and future AI product direction</li>
+              <li>Played a pivotal role in replacing a legacy keyword system with Knowledge v3, a scalable RAG architecture now serving the entire customer base, contributions included engineering its core components and conversational interface powered by AWS Bedrock LLMs</li>
+              <li>Contributed to architecture decisions by identifying true system bottlenecks and strategically reallocating optimization efforts for maximum impact and scalability</li>
+              <li><strong>Technology Stack:</strong> Python, Flask, NRQL, DynamoDB, Amazon S3, OpenSearch, Amazon Kinesis, Terraform, CloudFormation, Amazon Lambda, Ansible, Docker, Amazon SQS, Amazon Bedrock</li>
+            </ul>
+          </div>
+          <div class="job">
+            <header>
+              <h3><i class="fas fa-network-wired"></i> Ericsson</h3>
+              <span class="date">January 2022 - August 2024</span>
+            </header>
+            <div class="role-progression">
+              <div class="role">
+                <h4>Software Engineer I <span class="role-date"></span></h4>
+                <ul>
+                  <li>Optimized the Ericsson Charging (EC) application's license manager system by re-engineering the REST API interface, achieving a 90% [10 to 1] reduction in unnecessary alerts triggered, fostering a more efficient licensing experience and high availability</li>
+                  <li>Streamlined and automated the Ericsson's License Manager certificate renewal process, reducing operational time by 98% [25 minutes to 5 secs], enabling frictionless communication and peak performance</li>
+                  <li>Designed and led a project within the EC application, which effectively mitigated security vulnerabilities by implementing encryption and decryption algorithms across both node clusters and customer environments</li>
+                </ul>
+              </div>
+              <div class="role">
+                <h4>Engineering Intern <span class="role-date"></span></h4>
+                <ul>
+                  <li>Spearheaded a revamp of various legacy scripts within RHEL7.9, seamlessly migrating them from Python 2 to 3</li>
+                  <li>Achieved a 10% increase in system throughput through improved memory management and optimization of core libraries</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="education-tab" class="tab-content">
+          <div class="education-entry">
+            <h3><i class="fas fa-university"></i> Vellore Institute of Technology</h3>
+            <h4>B.Tech in Computer Science and Engineering</h4>
+            <span class="date">2018 - 2022</span>
+            <p>GPA: 8.50</p>
+          </div>
+          <div class="education-entry">
+            <h3><i class="fas fa-school"></i> Sri Chaitanya Junior Kalasala</h3>
+            <h4>Higher Secondary Education</h4>
+            <span class="date">2016 - 2018</span>
+            <p>Percentage: 96.2%</p>
+          </div>
+        </div>
+
+        <div id="certifications-tab" class="tab-content">
+          <div class="certification-entry">
+            <h3><i class="fas fa-award"></i> Natural Language Processing in TensorFlow</h3>
+            <h4><a href="https://www.coursera.org/account/accomplishments/verify/XQ5LBXEPKP8H" target="_blank" rel="noopener">DeepLearning.AI</a></h4>
+            <p>Comprehensive course covering advanced NLP techniques and implementation using TensorFlow framework for building intelligent language processing systems.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Projects ===== -->
+      <section id="projects" class="projects section">
+        <h2>Projects</h2>
+        <div class="projects-content">
+          <div class="project-entry">
+            <header>
+              <h3>
+                OneNote
+              </h3>
+              <span class="project-tech">Python, Django REST, MySQL, REST API</span>
+              <span class="date">December 2021</span>
+            </header>
+            <p>
+              Developed a task management application with user accounts and personalized task lists using Django MVT framework, MySQL database, and comprehensive REST API's for seamless task operations.
+            </p>
+            <a href="https://github.com/durgirajesh/OneNote" class="github-link" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </div>
+          <div class="project-entry">
+            <header>
+              <h3>
+                Spam Filter
+              </h3>
+              <span class="project-tech">Python, Neural Networks, TensorFlow, Keras</span>
+              <span class="date">March 2021</span>
+            </header>
+            <p>
+              Developed an email spam filter using neural networks and Natural Language Processing techniques like text tokenization, sequencing, and padding, executed on Google Colab and Jupyter Notebook with TensorFlow and Keras.
+            </p>
+            <a href="https://github.com/durgirajesh/Machine-Learning/tree/master/Email%20Spam" class="github-link" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- ===== Contact ===== -->
+      <section id="contact" class="contact section">
+        <h2>Contact</h2>
+        <div class="contact-details">
+          <p><i class="fas fa-envelope"></i> <a href="mailto:durgirajesh@gmail.com">durgirajesh@gmail.com</a></p>
+          <p><i class="fas fa-phone"></i> +91 9381228276</p>
+          <p><i class="fas fa-map-marker-alt"></i> Hyderabad, India</p>
+        </div>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/durgi-rajesh/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://leetcode.com/u/drk_/" target="_blank" rel="noopener" aria-label="LeetCode">
+            <i class="fas fa-code"></i>
+          </a>
+          <a href="https://github.com/durgirajesh" target="_blank" rel="noopener" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <small>© 2025 Durgi Rajesh. All rights reserved.</small>
+    </footer>
+
+    <!-- Tab functionality -->
+    <script src="index.js"></script>
+
+    <!-- Remove loading screen after page loads -->
+    <script>
+      window.addEventListener('load', () => {
+        const loadingScreen = document.getElementById('loading-screen');
+        if (loadingScreen) {
+          loadingScreen.style.opacity = '0';
+          setTimeout(() => {
+            loadingScreen.style.display = 'none';
+          }, 500);
+        }
+      });
+    </script>
+  </body>
+</html>
