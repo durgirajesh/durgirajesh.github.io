@@ -1,0 +1,207 @@
+% !TeX spellcheck = en_GB
+% !TeX program = pdflatex
+%
+% LuxSleek-CV 1.1 LaTeX template
+% Author: Andreï V. Kostyrka, University of Luxembourg
+%
+% 1.1: added tracking and letter-spacing for prettier lower caps, added `~` for language levels
+% 1.0: initial release
+%
+% This template fills the gap in the available variety of templates
+% by proposing something that is not a custom class, not using any
+% hard-coded settings deeply hidden in style files, and provides
+% a handful of custom command definitions that are as transparent as it gets.
+% Developed at the University of Luxembourg.
+%
+% *NOTHING IS HARCODED, and never should be.*
+%
+% Target audience: applicants in the IT industry, or business in general
+%
+% The main strength of this template is, it explicitly showcases how
+% to break the flow of text to achieve the most flexible right alignment
+% of dates for multiple configurations.
+
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[T1]{fontenc}     % We are using pdfLaTeX,
+\usepackage[utf8]{inputenc}  % hence this preparation
+\usepackage[british]{babel}
+\usepackage[left = 0mm, right = 0mm, top = 0mm, bottom = 0mm]{geometry}
+\usepackage[stretch = 25, shrink = 25, tracking=true, letterspace=30]{microtype}
+\usepackage{graphicx}        % To insert pictures
+\usepackage{xcolor}          % To add colour to the document
+\usepackage{marvosym}        % Provides icons for the contact details
+\usepackage{fontawesome5}
+\usepackage{enumitem}        % To redefine spacing in lists
+\setlist{parsep = 0pt, topsep = 0pt, partopsep = 1pt, itemsep = 1pt, leftmargin = 6mm}
+
+\usepackage{FiraSans}        % Change this to use any font, but keep it simple
+\renewcommand{\familydefault}{\sfdefault}
+
+% Colour palette – Classic Navy
+\definecolor{text}{HTML}{222831}     % Core body text
+\definecolor{heading}{HTML}{113A5D}  % Section headings (dark navy)
+\definecolor{accent}{HTML}{005F99}   % Accent elements
+\definecolor{neutral}{HTML}{A9B4C2}  % Muted / secondary
+
+% (Legacy colour retained in case it is still referenced elsewhere)
+\definecolor{deeppurple}{HTML}{1C1C1C}
+
+
+%%%%%%% USER COMMAND DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%%%%%
+% These are the real workhorses of this template
+\newcommand{\dates}[1]{\hfill\mbox{\textbf{#1}}} % Bold stuff that doesn’t got broken into lines
+\newcommand{\is}{\par\vskip.5ex plus .4ex} % Item spacing
+\newcommand{\smaller}[1]{{\small$\diamond$\ #1}}
+\newcommand{\headleft}[1]{\vspace*{0.8ex}\textsc{\textbf{#1}}\par%
+    \vspace*{-1.5ex}\hrulefill\par\vspace*{0.1ex}}
+\newcommand{\headright}[1]{\vspace*{1.5ex}\textsc{\Large\color{heading}#1}\par%
+     \vspace*{-1.5ex}{\color{accent}\hrulefill}\par}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[colorlinks = true, urlcolor = black, linkcolor = black]{hyperref}
+
+\begin{document}
+
+% Style definitions -- killing the unnecessary space and adding the skips explicitly
+\setlength{\topskip}{0pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\fboxsep}{0pt}
+\pagestyle{empty}
+\raggedbottom
+
+% Apply default text colour
+\color{text}
+
+\begin{minipage}[t][\textheight][t]{0.305\textwidth} %% Left column -- outer definition
+%  Left column -- top dark rectangle
+\colorbox{heading}{\begin{minipage}[t][5mm][t]{\textwidth}\null\hfill\null\end{minipage}}
+
+\vspace{-.2ex} % Eliminates the small gap
+\colorbox{heading!90}{\color{white}  %% LEFT BOX
+\kern0.09\textwidth\relax% Left margin provided explicitly
+\begin{minipage}[t][\textheight][t]{0.82\textwidth}
+\raggedright
+\vspace*{1.5ex}
+
+
+\huge DURGI \textbf{\textsc{Rajesh}} \href{https://www.durgirajesh.in/}{\textcolor{white}{\includegraphics[height=0.8em]{arrow-up-right-from-square-sharp-solid-full.png}}} \normalsize
+
+\vspace{0.7em}
+Experienced \textit{Software Engineer} with expertise in designing and architecting robust back-end systems. Proven experience in building, optimizing enterprise applications, enhancing system performance, and implementing robust security measures. Adept at bridging theoretical knowledge with practical application to deliver highly scalable systems.
+
+
+\headleft{Links}
+\faCode\ LeetCode: \href{https://leetcode.com/u/drk_/}{{\color{white}\underline{\textbf{drk\_}}}} \\
+\faGithub\ GitHub:  \href{https://github.com/durgirajesh}{{\color{white}\underline{\bf durgirajesh}}} \\
+\faLinkedin\ LinkedIn: \href{https://www.linkedin.com/in/durgi-rajesh/}{{\color{white}\underline{\textbf{durgi\_rajesh}}}}
+
+\headleft{Contact details}
+\small % To fit more content
+\faPaperPlane\ {\small durgirajesh@gmail.com} \\[0.4ex]
+\faPhone\ +91 9381228276 \\[0.5ex]
+\faHome\ Hyderabad, India
+\normalsize
+
+\headleft{Programming}
+\begin{itemize}
+\item Python
+\item C/C++
+\item Java
+\item JavaScript, PHP
+\item SQL
+\end{itemize}
+
+\headleft{Expertise}
+\begin{itemize}
+\item Amazon Web Services (AWS)
+\item Multi-threading
+\item Distributed Systems
+\item Microservices
+\item Information Retrieval Systems
+\item Django, Flask, OpenSearch
+\item Docker, Jenkins, MySQL
+\item Artificial Intelligence
+\item Systems Design, Platform Development
+\end{itemize}
+
+\headleft{Additional}
+\begin{itemize}
+\item Cultivated deep expertise in algorithmic design, solving 900+ LeetCode challenges and achieving high rankings in competitive programming contests.
+\end{itemize}
+
+\headleft{Certifications}
+\begin{itemize}
+  \item Natural Language Processing in TensorFlow: \\
+  \textbf{\href{https://www.coursera.org/account/accomplishments/verify/XQ5LBXEPKP8H}{{\color{white}\underline{DeepLearning.AI}}}}
+
+
+\end{itemize}
+
+
+\end{minipage}%
+\kern0.09\textwidth\relax%%Right margin provided explicitly to stretch the colourbox
+}
+\end{minipage}% Right column
+\hskip1.0em% Left margin for the white area
+\begin{minipage}[t]{0.66\textwidth}
+\setlength{\parskip}{0.5ex}% Adds spaces between paragraphs; use \\ to add new lines without this space. Shrink this amount to fit more data vertically
+
+\vspace{2ex}
+
+\headright{Experience}
+
+\large\textbf{{Genesys}} \normalsize | \textit{Software Engineer II}  \dates{November 2024 - Present}
+\begin{itemize}
+\item Researched and implemented optimal ElasticSearch DSL queries that increased the search accuracy of the existing system by \textbf{45\%}, significantly improving the quality of initial document retrieval.
+\item Researched, designed, and implemented a novel query preprocessing module that resolved a long-standing noise issue in the search system, resulting in an \textbf{85\%} improvement in precision and accuracy, and significantly reducing false positives in production.
+\item Led a comprehensive evaluation and benchmarking of large language models, optimizing for factual consistency, coherence, and relevance, directly influencing LLM selection and future AI product direction.
+\item Played a pivotal role in replacing a legacy keyword system with \textbf{Knowledge v3}, a scalable RAG architecture now serving the entire customer base, contributions included engineering its core components and conversational interface powered by AWS Bedrock LLMs.
+\item Contributed to architecture decisions by identifying true system bottlenecks and strategically reallocating optimization efforts for maximum impact and scalability.
+\item \textbf{Technology Stack:} Python, Flask, NRQL, DynamoDB, Amazon S3, OpenSearch, Amazon Kinesis, Terraform, CloudFormation, Amazon Lambda, Ansible, Docker, Amazon SQS, Amazon Bedrock.
+\end{itemize}
+
+\large\textbf{{Ericsson}} \normalsize | \textit{Software Engineer I}  \dates{July 2022 - August 2024}
+\begin{itemize}
+\item Optimized the Ericsson Charging (EC) application's \textbf{license manager} system by re-engineering the REST API interface, achieving a \textbf{90\%} [10 to 1] reduction in unnecessary alerts triggered, fostering a more efficient licensing experience and high availability.
+\item Streamlined and automated the Ericsson's License Manager certificate renewal \\ process, reducing operational time by \textbf{98\%} [25 minutes to 5 secs], enabling \\ frictionless communication and peak performance.
+\item Designed and led a project within the EC application, which effectively mitigated security vulnerabilities by implementing encryption and decryption algorithms across both node clusters and customer environments.
+\end{itemize}
+
+\large\textbf{{Ericsson}} \normalsize | \textit{Engineering Intern}  \dates{January 2022 - July 2022}
+\begin{itemize}
+\item Spearheaded a revamp of various legacy scripts within \textbf{RHEL7.9}, seamlessly migrating them from \textbf{Python 2 to 3}.
+\item Achieved a \textbf{10\%} increase in system throughput through improved memory \\ management and optimization of core libraries.
+\end{itemize}
+
+\headright{Projects}
+
+\textbf{OneNote} \href{https://github.com/durgirajesh/OneNote}{\textbf{\faGithub}} | \textit{Python, Django REST, MySQL, REST API}  \dates{December 2021}
+\begin{itemize}
+\item Developed a task management application with user accounts and personalized task lists using Django MVT framework, MySQL database, and comprehensive REST APIs for seamless task operations.
+\end{itemize}
+
+\textbf{Spam Filter} \href{https://github.com/durgirajesh/Machine-Learning/tree/master/Email\%20Spam}{\textbf{\faGithub}} | \textit{Python, Neural Networks, TensorFlow, Keras}  \dates{March 2021}
+\begin{itemize}
+\item Developed an email spam filter using neural networks and Natural Language Processing techniques like text tokenization, sequencing, and padding, executed on Google Colab and Jupyter Notebook with TensorFlow and Keras, post \href{https://www.coursera.org/account/accomplishments/verify/XQ5LBXEPKP8H}{\textbf{DeepLearning.AI} \raisebox{-0.15em}{\includegraphics[height=1em]{arrow-up-right-from-square-duotone-solid-full.png}}} certification.
+\end{itemize}
+
+
+
+\headright{Education}
+\begin{itemize}
+  \item \textbf{B.Tech in Computer Science and Engineering} \dates{2018 - 2022}
+    \begin{itemize}
+      \item[$\circ$] Vellore Institute Of Technology | GPA: \textbf{8.50}
+    \end{itemize}
+
+  \item \textbf{Higher Secondary Education} \dates{2016-2018}
+    \begin{itemize}
+      \item[$\circ$] Sri Chaitanya Junior Kalasala | Percentage: \textbf{96.2\%}
+    \end{itemize}
+\end{itemize}
+
+\end{minipage}
+
+\end{document}
